@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite de Pruebas de la clase 3">
+    <test name="Tests de Login Incorrecto">
+        <classes>
+            <class name="clase_3.SauceDemoTest">
+                <methods>
+                    <include name="testErrorPassword"/>
+                    <include name="testErrorUserName"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Tests de Login Correcto">
+        <classes>
+            <class name="clase_3.SauceDemoTest">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
