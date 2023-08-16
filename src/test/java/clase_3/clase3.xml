@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite de Pruebas de la clase 3">
+    <test name="Pruebas Hooks">
+        <classes>
+            <class name="clase_3.Hooks" />
+        </classes>
+    </test>
+    <test name="Primeras Pruebas">
+        <classes>
+            <class name="clase_3.Prueba" >
+                <methods>
+                    <exclude name="primerTest"></exclude>
+                    <include name="segundoTest"/>
+                </methods>
+            </class>
+            <class name="clase_3.Hooks" />
+        </classes>
+    </test>
+</suite>
